@@ -17,6 +17,7 @@ namespace TestCreditSuisse.BackEnd.DataAccess
                     new Trade{ Value= 400000d, ClientSector="Public", NextPaymentDate= new DateTime(2020,07,01) },
                     new Trade{ Value= 5000000d, ClientSector="Public", NextPaymentDate= new DateTime(2024,01,02) },
                     new Trade{ Value= 3000000d, ClientSector="Public", NextPaymentDate= new DateTime(2023,10,26) }
+                    
                 } }
 
             };

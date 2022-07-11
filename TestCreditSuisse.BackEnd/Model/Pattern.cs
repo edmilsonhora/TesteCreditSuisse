@@ -21,8 +21,8 @@ namespace TestCreditSuisse.BackEnd.Model
             this._referenceDate = referenceDate;
         }
         public override bool Execute()
-        {
-            if(_referenceDate.AddDays(30) > Trade.NextPaymentDate)
+        {           
+           if (Trade.NextPaymentDate.AddDays(30) < _referenceDate)
             {
                 Category = "EXPIRED";
                 return true;
